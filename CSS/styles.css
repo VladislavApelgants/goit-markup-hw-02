@@ -1,4 +1,134 @@
-body {
-  font-family: 'Ralewey';
-  font-weight: 700;
+:root {
+  --logo-highlight: #2196f3;
+  --dominant-text-color: #757575;
+  /* --link-color: #212121; */
+  --link-color-active: #2196f3;
+  --button-color-active: #2196f3;
+  --mail-link-color: #757575;
+  --logo-link-color: #000000;
+  --color-portfolio-title: #212121;
 }
+
+/* Common Styles */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--dominant-text-color);
+  background-color: #fff;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--link-color-active);
+}
+
+.list {
+  list-style: none;
+}
+
+/* -------------------- Index ----------------------- */
+.studio .text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--dominant-text-color);
+}
+/* -------------------- Index end ----------------------- */
+
+/* -------------------- Portfolio ----------------------- */
+/* Header */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.logo {
+  color: var(--logo-link-color);
+}
+
+.logo-highlight {
+  color: var(--logo-highlight);
+}
+.navigation-list .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mail,
+.phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--mail-link-color);
+}
+
+/* Main */
+
+.main-filter-button {
+  cursor: pointer;
+}
+.main-filter-button:hover,
+.main-filter-button:focus {
+  color: var(--button-color-active);
+}
+
+.portfolio-list-link {
+  text-decoration: none;
+}
+.portfolio .portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-portfolio-title);
+}
+.portfolio-list-link .text {
+  color: var(--dominant-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+/* Footer */
+
+footer {
+  background-color: #2f303a;
+}
+.address-list-location {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.map {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-mail,
+.footer-phone {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* -------------------- Portfolio end ----------------------- */
