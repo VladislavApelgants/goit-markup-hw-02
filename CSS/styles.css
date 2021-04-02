@@ -60,7 +60,13 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
 }
-
+.navigation-list .link:hover,
+.navigation-list .link:focus {
+  color: var(--link-color-active);
+}
+.link.current {
+  color: var(--link-color-active);
+}
 .mail,
 .phone {
   font-weight: 500;
