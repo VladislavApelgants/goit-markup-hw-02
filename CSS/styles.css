@@ -1,16 +1,23 @@
 :root {
+  --bgc-body: #ffffff;
+  --color-hero: #ffffff;
+  --footer-col-logo: #ffffff;
+  --color-primary-button: #ffffff;
+  --color-map: #ffffff;
   --logo-highlight: #2196f3;
-  --dominant-text-color: #757575;
   --link-color-active: #2196f3;
   --button-color-active: #2196f3;
+  --bgc-primary-button: #2196f3;
   --mail-link-color: #757575;
+  --dominant-text-color: #757575;
   --logo-link-color: #000000;
   --color-portfolio-title: #212121;
   --color-index-title: #212121;
-  --bgc-color-button: #f5f4fa;
   --txt-color-button: #212121;
-  --color-primary-button: #ffffff;
-  --bgc-primary-button: #2196f3;
+  --color-navigation-list: #212121;
+  --bgc-color-button: #f5f4fa;
+  --dark-bgc: #2f303a;
+  --color-mail-phone: rgba(255, 255, 255, 0.6);
 }
 
 /* ---Common Styles--- */
@@ -18,11 +25,18 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--dominant-text-color);
-  background-color: #ffffff;
+  background-color: var(--bgc-body);
 }
 
 .link {
   text-decoration: none;
+}
+.link-logo {
+  text-decoration: none;
+}
+.logo.footer-logo {
+  text-decoration: none;
+  color: var(--footer-col-logo);
 }
 
 .link:hover,
@@ -58,7 +72,7 @@ body {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--color-navigation-list);
 }
 .navigation-list .link:hover,
 .navigation-list .link:focus {
@@ -114,15 +128,13 @@ body {
 /* ---Footer--- */
 
 footer {
-  background-color: #2f303a;
+  background-color: var(--dark-bgc);
 }
 
 .address-list-location {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  color: #ffffff;
 }
 
 .map {
@@ -133,7 +145,7 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--color-map);
 }
 
 .footer-mail,
@@ -145,7 +157,7 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-mail-phone);
 }
 /* ---Footer end--- */
 
@@ -153,7 +165,7 @@ footer {
 
 /* -------------------- Index -------------------- */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--dark-bgc);
 }
 
 .hero-title {
@@ -165,7 +177,7 @@ footer {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--color-hero);
 }
 
 .features-list .title {
