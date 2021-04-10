@@ -110,7 +110,7 @@ body {
   cursor: pointer;
 }
 
-.button.primary {
+.button-primary {
   align-items: center;
   text-align: center;
 
@@ -122,6 +122,10 @@ body {
 
   color: var(--color-primary-button);
   background-color: var(--bgc-primary-button);
+}
+.button-primary:focus,
+.button-primary:hover {
+  cursor: pointer;
 }
 /* ---button end--- */
 
